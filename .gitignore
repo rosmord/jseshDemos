@@ -18,3 +18,5 @@ build
 .settings
 .vscode
 *~
+example.png
+example.svg
