@@ -34,6 +34,7 @@ public class SimpleBitmap {
 		// Change a number of parameters
 		DrawingSpecification drawingSpecifications = new DrawingSpecificationsImplementation();
 		drawingSpecifications.setMaxCadratWidth(60);
+		drawingSpecifications.setMaxCadratWidth(60);
 
 		PageLayout pageLayout = new PageLayout();
 		pageLayout.setLeftMargin(5);
