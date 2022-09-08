@@ -60,13 +60,12 @@ public class SimpleBitmap {
 		// drawingSpecifications.setTextOrientation(TextOrientation.VERTICAL);
 		drawingSpecifications.setSmallSignsCentered(true);
 
-		drawingSpecifications.setMaxCadratWidth(60);
-		drawingSpecifications.setMaxCadratWidth(60);
+		drawingSpecifications.setMaxCadratWidth(60); // same as Cadrat Height
 
 		// add a margin
 		PageLayout pageLayout = new PageLayout();
-		pageLayout.setLeftMargin(100);
-		pageLayout.setTopMargin(100);
+		pageLayout.setLeftMargin(10);
+		pageLayout.setTopMargin(10);
 		drawingSpecifications.setPageLayout(pageLayout);
 
 		// actual drawing.
@@ -94,8 +93,7 @@ public class SimpleBitmap {
 			facade.setCadratHeight(60);
 			// Change a number of parameters
 			DrawingSpecification drawingSpecifications = new DrawingSpecificationsImplementation();
-			drawingSpecifications.setMaxCadratWidth(60);
-			drawingSpecifications.setMaxCadratWidth(60);
+			drawingSpecifications.setMaxCadratWidth(60); // same as Cadrat Height		
 
 			drawingSpecifications.setTextDirection(TextDirection.RIGHT_TO_LEFT);
 			// Draw in columns :
@@ -112,6 +110,7 @@ public class SimpleBitmap {
 					dims.getHeight()));
 			// Draw the picture, which will end up written in the writer
 			facade.draw(mdcText, graphics2d, 0, 0);
+			graphics2d.dispose(); // closes the graphics 2D (IMPORTANT !)
 			// Returns the SVG which has just being copied in the StringWriter.
 			return writer.toString();
 		} catch (IOException e) {
