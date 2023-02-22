@@ -6,6 +6,6 @@ Ultimately, all demos are supposed to use the same version anyway.
 
 The current demos are :
 
-bitmapDemo
+[bitmapDemo](bitmapDemo)
 : using JSesh to generate bitmaps
 
